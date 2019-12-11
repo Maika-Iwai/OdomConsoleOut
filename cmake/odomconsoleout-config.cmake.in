@@ -1,0 +1,54 @@
+# OdomConsoleOut CMake config file
+#
+# This file sets the following variables:
+# OdomConsoleOut_FOUND - Always TRUE.
+# OdomConsoleOut_INCLUDE_DIRS - Directories containing the OdomConsoleOut include files.
+# OdomConsoleOut_IDL_DIRS - Directories containing the OdomConsoleOut IDL files.
+# OdomConsoleOut_LIBRARIES - Libraries needed to use OdomConsoleOut.
+# OdomConsoleOut_DEFINITIONS - Compiler flags for OdomConsoleOut.
+# OdomConsoleOut_VERSION - The version of OdomConsoleOut found.
+# OdomConsoleOut_VERSION_MAJOR - The major version of OdomConsoleOut found.
+# OdomConsoleOut_VERSION_MINOR - The minor version of OdomConsoleOut found.
+# OdomConsoleOut_VERSION_REVISION - The revision version of OdomConsoleOut found.
+# OdomConsoleOut_VERSION_CANDIDATE - The candidate version of OdomConsoleOut found.
+
+message(STATUS "Found OdomConsoleOut-@PROJECT_VERSION@")
+set(OdomConsoleOut_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(OdomConsoleOut_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(OdomConsoleOut_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(OdomConsoleOut_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(OdomConsoleOut_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(OdomConsoleOut_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(OdomConsoleOut_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(OdomConsoleOut_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(OdomConsoleOut_VERSION @PROJECT_VERSION@)
+set(OdomConsoleOut_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(OdomConsoleOut_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(OdomConsoleOut_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(OdomConsoleOut_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

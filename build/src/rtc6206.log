@@ -1,0 +1,33 @@
+Dec 11 03:06:34.051 INFO: manager: 1.2.1
+Dec 11 03:06:34.051 INFO: manager: Copyright (C) 2003-2017
+Dec 11 03:06:34.051 INFO: manager:   Noriaki Ando
+Dec 11 03:06:34.051 INFO: manager:   Intelligent Systems Research Institute, AIST
+Dec 11 03:06:34.051 INFO: manager: Manager starting.
+Dec 11 03:06:34.051 INFO: manager: Starting local logging.
+Dec 11 03:06:34.059 WARNING: NamingOnCorba: No endpoint for the CORBA naming service (localhost) was found.
+Dec 11 03:06:34.059 INFO: NamingManager: NameServer connection succeeded: corba/localhost
+Dec 11 03:06:34.059 INFO: ManagerServant: Named manager reference (INS) was successfully created.
+Dec 11 03:06:34.060 WARNING: ManagerServant: Master manager not found
+Dec 11 03:06:34.060 INFO: LocalServiceAdmin: All the local services are enabled.
+Dec 11 03:06:34.061 INFO: ec_base: setRate(1000000.000000) done
+Dec 11 03:06:34.061 INFO: ec_base: setRate(1000.000000) done
+Dec 11 03:06:34.061 INFO: OdomConsoleOut0: 1 execution context was created.
+Dec 11 03:06:34.061 INFO: OdomConsoleOut0: Initial active configuration set is default-set.
+Dec 11 03:06:44.067 INFO: ManagerServant: Master manager not found
+Dec 11 03:06:46.008 WARNING: SdoServiceAdmin: No available SDO service in the factory: 
+Dec 11 03:06:54.083 INFO: ManagerServant: Master manager not found
+Dec 11 03:07:04.098 INFO: ManagerServant: Master manager not found
+Dec 11 03:07:14.112 INFO: ManagerServant: Master manager not found
+Dec 11 03:07:24.126 INFO: ManagerServant: Master manager not found
+Dec 11 03:07:34.139 INFO: ManagerServant: Master manager not found
+Dec 11 03:07:44.153 INFO: ManagerServant: Master manager not found
+Dec 11 03:07:54.167 INFO: ManagerServant: Master manager not found
+Dec 11 03:08:04.181 INFO: ManagerServant: Master manager not found
+Dec 11 03:08:14.194 INFO: ManagerServant: Master manager not found
+Dec 11 03:08:24.209 INFO: ManagerServant: Master manager not found
+Dec 11 03:08:34.223 INFO: ManagerServant: Master manager not found
+Dec 11 03:08:44.237 INFO: ManagerServant: Master manager not found
+Dec 11 03:08:54.250 INFO: ManagerServant: Master manager not found
+Dec 11 03:09:04.263 INFO: ManagerServant: Master manager not found
+Dec 11 03:09:10.011 WARNING: ec_worker: ExecutionContext is already stopped.
+Dec 11 03:09:10.011 ERROR: ec_base: Invoking on_shutdown() for each RTC failed.

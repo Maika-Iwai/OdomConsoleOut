@@ -1,0 +1,31 @@
+Dec 05 10:40:00.425 INFO: manager: 1.2.0
+Dec 05 10:40:00.425 INFO: manager: Copyright (C) 2003-2017
+Dec 05 10:40:00.425 INFO: manager:   Noriaki Ando
+Dec 05 10:40:00.425 INFO: manager:   Intelligent Systems Research Institute, AIST
+Dec 05 10:40:00.425 INFO: manager: Manager starting.
+Dec 05 10:40:00.425 INFO: manager: Starting local logging.
+Dec 05 10:40:00.434 WARNING: NamingOnCorba: No endpoint for the CORBA naming service (localhost) was found.
+Dec 05 10:40:00.434 INFO: NamingManager: NameServer connection succeeded: corba/localhost
+Dec 05 10:40:00.436 INFO: ManagerServant: Named manager reference (INS) was successfully created.
+Dec 05 10:40:00.438 WARNING: ManagerServant: Master manager not found
+Dec 05 10:40:00.438 INFO: LocalServiceAdmin: All the local services are enabled.
+Dec 05 10:40:00.441 INFO: ec_base: setRate(1000000.000000) done
+Dec 05 10:40:00.441 INFO: ec_base: setRate(1000.000000) done
+Dec 05 10:40:00.441 INFO: OdomConsoleOut0: 1 execution context was created.
+Dec 05 10:40:00.441 INFO: OdomConsoleOut0: Initial active configuration set is default-set.
+Dec 05 10:40:00.442 ERROR: periodic_ec: setThreadCpuAffinity():CPU affinity mask setting failed
+Dec 05 10:40:00.442 ERROR: periodic_ec: pthread_getaffinity_np(): returned error.
+Dec 05 10:40:10.442 INFO: ManagerServant: Master manager not found
+Dec 05 10:40:20.463 INFO: ManagerServant: Master manager not found
+Dec 05 10:40:30.475 INFO: ManagerServant: Master manager not found
+Dec 05 10:40:36.260 WARNING: SdoServiceAdmin: No available SDO service in the factory: 
+Dec 05 10:40:40.489 INFO: ManagerServant: Master manager not found
+Dec 05 10:40:50.504 INFO: ManagerServant: Master manager not found
+Dec 05 10:41:00.519 INFO: ManagerServant: Master manager not found
+Dec 05 10:41:10.534 INFO: ManagerServant: Master manager not found
+Dec 05 10:41:20.549 INFO: ManagerServant: Master manager not found
+Dec 05 10:41:30.564 INFO: ManagerServant: Master manager not found
+Dec 05 10:41:40.579 INFO: ManagerServant: Master manager not found
+Dec 05 10:41:50.593 INFO: ManagerServant: Master manager not found
+Dec 05 10:42:00.608 INFO: ManagerServant: Master manager not found
+Dec 05 10:42:10.623 INFO: ManagerServant: Master manager not found

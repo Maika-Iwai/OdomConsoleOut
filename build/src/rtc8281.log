@@ -1,0 +1,30 @@
+Dec 05 10:44:28.989 INFO: manager: 1.2.0
+Dec 05 10:44:28.989 INFO: manager: Copyright (C) 2003-2017
+Dec 05 10:44:28.989 INFO: manager:   Noriaki Ando
+Dec 05 10:44:28.989 INFO: manager:   Intelligent Systems Research Institute, AIST
+Dec 05 10:44:28.989 INFO: manager: Manager starting.
+Dec 05 10:44:28.989 INFO: manager: Starting local logging.
+Dec 05 10:44:28.994 WARNING: NamingOnCorba: No endpoint for the CORBA naming service (localhost) was found.
+Dec 05 10:44:28.994 INFO: NamingManager: NameServer connection succeeded: corba/localhost
+Dec 05 10:44:28.994 INFO: ManagerServant: Named manager reference (INS) was successfully created.
+Dec 05 10:44:28.995 WARNING: ManagerServant: Master manager not found
+Dec 05 10:44:28.995 INFO: LocalServiceAdmin: All the local services are enabled.
+Dec 05 10:44:28.996 INFO: ec_base: setRate(1000000.000000) done
+Dec 05 10:44:28.996 INFO: ec_base: setRate(1000.000000) done
+Dec 05 10:44:28.996 INFO: OdomConsoleOut0: 1 execution context was created.
+Dec 05 10:44:28.996 INFO: OdomConsoleOut0: Initial active configuration set is default-set.
+Dec 05 10:44:28.996 ERROR: periodic_ec: setThreadCpuAffinity():CPU affinity mask setting failed
+Dec 05 10:44:28.996 ERROR: periodic_ec: pthread_getaffinity_np(): returned error.
+Dec 05 10:44:36.326 WARNING: SdoServiceAdmin: No available SDO service in the factory: 
+Dec 05 10:44:39.006 INFO: ManagerServant: Master manager not found
+Dec 05 10:44:49.021 INFO: ManagerServant: Master manager not found
+Dec 05 10:44:59.035 INFO: ManagerServant: Master manager not found
+Dec 05 10:45:09.051 INFO: ManagerServant: Master manager not found
+Dec 05 10:45:19.066 INFO: ManagerServant: Master manager not found
+Dec 05 10:45:29.081 INFO: ManagerServant: Master manager not found
+Dec 05 10:45:39.095 INFO: ManagerServant: Master manager not found
+Dec 05 10:45:49.109 INFO: ManagerServant: Master manager not found
+Dec 05 10:45:59.124 INFO: ManagerServant: Master manager not found
+Dec 05 10:46:09.138 INFO: ManagerServant: Master manager not found
+Dec 05 10:46:12.910 WARNING: ec_worker: ExecutionContext is already stopped.
+Dec 05 10:46:12.910 ERROR: ec_base: Invoking on_shutdown() for each RTC failed.

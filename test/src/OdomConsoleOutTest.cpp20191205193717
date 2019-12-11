@@ -1,0 +1,165 @@
+﻿// -*- C++ -*-
+/*!
+ * @file  OdomConsoleOutTest.cpp
+ * @brief Display odometry of RGB-D sensor
+ * @date $Date$
+ *
+ * $Id$
+ */
+
+#include "OdomConsoleOutTest.h"
+
+// Module specification
+// <rtc-template block="module_spec">
+static const char* odomconsoleout_spec[] =
+  {
+    "implementation_id", "OdomConsoleOutTest",
+    "type_name",         "OdomConsoleOutTest",
+    "description",       "Display odometry of RGB-D sensor",
+    "version",           "1.0.0",
+    "vendor",            "Maika Iwai, Robot System Design Laboratory, Meijo University",
+    "category",          "ImageProcessing",
+    "activity_type",     "PERIODIC",
+    "kind",              "DataFlowComponent",
+    "max_instance",      "1",
+    "language",          "C++",
+    "lang_type",         "compile",
+    ""
+  };
+// </rtc-template>
+
+/*!
+ * @brief constructor
+ * @param manager Maneger Object
+ */
+OdomConsoleOutTest::OdomConsoleOutTest(RTC::Manager* manager)
+    // <rtc-template block="initializer">
+  : RTC::DataFlowComponentBase(manager),
+    m_pose3DquaternionIn("Pose3DQuaternion", m_pose3Dquaternion)
+
+    // </rtc-template>
+{
+}
+
+/*!
+ * @brief destructor
+ */
+OdomConsoleOutTest::~OdomConsoleOutTest()
+{
+}
+
+
+
+RTC::ReturnCode_t OdomConsoleOutTest::onInitialize()
+{
+  // Registration: InPort/OutPort/Service
+  // <rtc-template block="registration">
+  // Set InPort buffers
+  
+  // Set OutPort buffer
+  addOutPort("Pose3DQuaternion", m_pose3DquaternionOut);
+  
+  // Set service provider to Ports
+  
+  // Set service consumers to Ports
+  
+  // Set CORBA Service Ports
+  
+  // </rtc-template>
+
+  // <rtc-template block="bind_config">
+  // </rtc-template>
+  
+  return RTC::RTC_OK;
+}
+
+/*
+RTC::ReturnCode_t OdomConsoleOutTest::onFinalize()
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t OdomConsoleOutTest::onStartup(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t OdomConsoleOutTest::onShutdown(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+
+RTC::ReturnCode_t OdomConsoleOutTest::onActivated(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+
+
+RTC::ReturnCode_t OdomConsoleOutTest::onDeactivated(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+
+
+RTC::ReturnCode_t OdomConsoleOutTest::onExecute(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+
+/*
+RTC::ReturnCode_t OdomConsoleOutTest::onAborting(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t OdomConsoleOutTest::onError(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t OdomConsoleOutTest::onReset(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t OdomConsoleOutTest::onStateUpdate(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t OdomConsoleOutTest::onRateChanged(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+
+
+extern "C"
+{
+ 
+  void OdomConsoleOutTestInit(RTC::Manager* manager)
+  {
+    coil::Properties profile(odomconsoleout_spec);
+    manager->registerFactory(profile,
+                             RTC::Create<OdomConsoleOutTest>,
+                             RTC::Delete<OdomConsoleOutTest>);
+  }
+  
+};
+
+

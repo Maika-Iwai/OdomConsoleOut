@@ -1,0 +1,23 @@
+Dec 11 03:04:28.835 INFO: manager: 1.2.1
+Dec 11 03:04:28.835 INFO: manager: Copyright (C) 2003-2017
+Dec 11 03:04:28.835 INFO: manager:   Noriaki Ando
+Dec 11 03:04:28.835 INFO: manager:   Intelligent Systems Research Institute, AIST
+Dec 11 03:04:28.835 INFO: manager: Manager starting.
+Dec 11 03:04:28.835 INFO: manager: Starting local logging.
+Dec 11 03:04:28.842 WARNING: NamingOnCorba: No endpoint for the CORBA naming service (localhost) was found.
+Dec 11 03:04:28.842 INFO: NamingManager: NameServer connection succeeded: corba/localhost
+Dec 11 03:04:28.843 INFO: ManagerServant: Named manager reference (INS) was successfully created.
+Dec 11 03:04:28.843 WARNING: ManagerServant: Master manager not found
+Dec 11 03:04:28.843 INFO: LocalServiceAdmin: All the local services are enabled.
+Dec 11 03:04:28.844 INFO: ec_base: setRate(1000000.000000) done
+Dec 11 03:04:28.844 INFO: ec_base: setRate(1000.000000) done
+Dec 11 03:04:28.844 INFO: OdomConsoleOut0: 1 execution context was created.
+Dec 11 03:04:28.844 INFO: OdomConsoleOut0: Initial active configuration set is default-set.
+Dec 11 03:04:38.855 INFO: ManagerServant: Master manager not found
+Dec 11 03:04:41.457 WARNING: SdoServiceAdmin: No available SDO service in the factory: 
+Dec 11 03:04:48.870 INFO: ManagerServant: Master manager not found
+Dec 11 03:04:58.884 INFO: ManagerServant: Master manager not found
+Dec 11 03:05:08.897 INFO: ManagerServant: Master manager not found
+Dec 11 03:05:18.910 INFO: ManagerServant: Master manager not found
+Dec 11 03:05:21.814 WARNING: ec_worker: ExecutionContext is already stopped.
+Dec 11 03:05:21.814 ERROR: ec_base: Invoking on_shutdown() for each RTC failed.
